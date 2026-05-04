@@ -1,0 +1,35 @@
+{
+  "mes.smartgateplus.dbo.setup_change_data": {
+    "machine": {
+      "name": "abcd",
+      "location": "Plant-1 / Line-A",
+      "owner": "Production Team",
+      "sourceType": "PLC",
+      "refresh": "Every 5 minutes"
+    },
+    "table": {
+      "database": "mes",
+      "schema": "dbo",
+      "table": "setup_change_data",
+      "description": "Stores machine setup change parameters",
+      "users": "MES, Production, Quality"
+    },
+    "fields": [
+      {
+        "field": "plant_id",
+        "datatype": "int",
+        "meaning": "Plant Identifier",
+        "nullable": "No",
+        "value": "123"
+      },
+      {
+        "field": "machine_name",
+        "datatype": "varchar(50)",
+        "meaning": "Name of the machine",
+        "nullable": "No",
+        "value": "TBM-01"
+      }
+    ],
+    "updated_at": "26/03/2026, 09:52:24"
+  }
+}
