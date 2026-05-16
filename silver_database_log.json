@@ -256,6 +256,759 @@
       }
     ]
   },
+  "silver.silver.dim_moulddetail": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_moulddetail"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "wc_id",
+        "datatype": "double"
+      },
+      {
+        "field": "side",
+        "datatype": "string"
+      },
+      {
+        "field": "mould_id",
+        "datatype": "int"
+      },
+      {
+        "field": "event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "current_heat",
+        "datatype": "double"
+      },
+      {
+        "field": "description",
+        "datatype": "string"
+      },
+      {
+        "field": "recipe_id",
+        "datatype": "int"
+      },
+      {
+        "field": "sap_code",
+        "datatype": "string"
+      },
+      {
+        "field": "updated_by",
+        "datatype": "int"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_mouldmaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_mouldmaster"
+    },
+    "fields": [
+      {
+        "field": "mould_id",
+        "datatype": "int"
+      },
+      {
+        "field": "mould_name",
+        "datatype": "string"
+      },
+      {
+        "field": "mould_target_life",
+        "datatype": "double"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_pcrdefectarea": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_pcrdefectarea"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "name",
+        "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_pcrdefectmaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_pcrdefectmaster"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "defect_area_id",
+        "datatype": "int"
+      },
+      {
+        "field": "defect_name",
+        "datatype": "string"
+      },
+      {
+        "field": "description",
+        "datatype": "string"
+      },
+      {
+        "field": "short_defect_name",
+        "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_recipemaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_recipemaster"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "process_id",
+        "datatype": "int"
+      },
+      {
+        "field": "product_type_id",
+        "datatype": "int"
+      },
+      {
+        "field": "oem_id",
+        "datatype": "int"
+      },
+      {
+        "field": "name",
+        "datatype": "string"
+      },
+      {
+        "field": "recipe_no",
+        "datatype": "int"
+      },
+      {
+        "field": "tyre_size",
+        "datatype": "string"
+      },
+      {
+        "field": "description",
+        "datatype": "string"
+      },
+      {
+        "field": "tmp_string1",
+        "datatype": "string"
+      },
+      {
+        "field": "tmp_string2",
+        "datatype": "string"
+      },
+      {
+        "field": "tuo_no",
+        "datatype": "double"
+      },
+      {
+        "field": "p_code",
+        "datatype": "double"
+      },
+      {
+        "field": "tyre_weight",
+        "datatype": "double"
+      },
+      {
+        "field": "tolrence_a",
+        "datatype": "double"
+      },
+      {
+        "field": "tolrence_b",
+        "datatype": "double"
+      },
+      {
+        "field": "tuo",
+        "datatype": "boolean"
+      },
+      {
+        "field": "dbm",
+        "datatype": "boolean"
+      },
+      {
+        "field": "static",
+        "datatype": "boolean"
+      },
+      {
+        "field": "second_line",
+        "datatype": "boolean"
+      },
+      {
+        "field": "painting_min_hour",
+        "datatype": "int"
+      },
+      {
+        "field": "tbm_max_hour",
+        "datatype": "int"
+      },
+      {
+        "field": "is_serial_no_interlock",
+        "datatype": "boolean"
+      },
+      {
+        "field": "inch_name",
+        "datatype": "int"
+      },
+      {
+        "field": "days_limit",
+        "datatype": "int"
+      },
+      {
+        "field": "category",
+        "datatype": "string"
+      },
+      {
+        "field": "mould_target",
+        "datatype": "double"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_statusmaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_statusmaster"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "name",
+        "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_tblitemmaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_tblitemmaster"
+    },
+    "fields": [
+      {
+        "field": "item_id",
+        "datatype": "int"
+      },
+      {
+        "field": "item_code",
+        "datatype": "string"
+      },
+      {
+        "field": "name",
+        "datatype": "string"
+      },
+      {
+        "field": "sap_code",
+        "datatype": "string"
+      },
+      {
+        "field": "description",
+        "datatype": "string"
+      },
+      {
+        "field": "uom_id",
+        "datatype": "int"
+      },
+      {
+        "field": "m_class_id",
+        "datatype": "int"
+      },
+      {
+        "field": "lot_size",
+        "datatype": "int"
+      },
+      {
+        "field": "created_date",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "modified_date",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "created_by",
+        "datatype": "int"
+      },
+      {
+        "field": "modified_by",
+        "datatype": "int"
+      },
+      {
+        "field": "is_deleted",
+        "datatype": "boolean"
+      },
+      {
+        "field": "m_category_id",
+        "datatype": "int"
+      },
+      {
+        "field": "max_aging",
+        "datatype": "int"
+      },
+      {
+        "field": "min_aging",
+        "datatype": "int"
+      },
+      {
+        "field": "cycle_time",
+        "datatype": "int"
+      },
+      {
+        "field": "revision",
+        "datatype": "int"
+      },
+      {
+        "field": "is_current",
+        "datatype": "boolean"
+      },
+      {
+        "field": "area_id",
+        "datatype": "int"
+      },
+      {
+        "field": "item_freezed",
+        "datatype": "int"
+      },
+      {
+        "field": "print_tag_type",
+        "datatype": "string"
+      },
+      {
+        "field": "max_aging_unit_id",
+        "datatype": "int"
+      },
+      {
+        "field": "min_aging_unit_id",
+        "datatype": "int"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_tblunitmaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_tblunitmaster"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "string"
+      },
+      {
+        "field": "name",
+        "datatype": "string"
+      },
+      {
+        "field": "description",
+        "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.dim_wcmaster": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "dim_wcmaster"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "process_id",
+        "datatype": "int"
+      },
+      {
+        "field": "name",
+        "datatype": "string"
+      },
+      {
+        "field": "barcode",
+        "datatype": "string"
+      },
+      {
+        "field": "description",
+        "datatype": "string"
+      },
+      {
+        "field": "wc_group_id",
+        "datatype": "double"
+      },
+      {
+        "field": "wc_group_name",
+        "datatype": "string"
+      },
+      {
+        "field": "trench_name",
+        "datatype": "string"
+      },
+      {
+        "field": "channel_name",
+        "datatype": "string"
+      },
+      {
+        "field": "user_id",
+        "datatype": "double"
+      },
+      {
+        "field": "downtime_in_sec",
+        "datatype": "double"
+      },
+      {
+        "field": "wc_sap_code",
+        "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
   "silver.silver.fct_bookingdata": {
     "table": {
       "database": "silver",
@@ -366,6 +1119,172 @@
       {
         "field": "category",
         "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.fct_curingncm": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "fct_curingncm"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "barcode",
+        "datatype": "int"
+      },
+      {
+        "field": "wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "recipe",
+        "datatype": "string"
+      },
+      {
+        "field": "status",
+        "datatype": "string"
+      },
+      {
+        "field": "defect_name",
+        "datatype": "string"
+      },
+      {
+        "field": "user_name",
+        "datatype": "int"
+      },
+      {
+        "field": "event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.fct_curingpcr": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "fct_curingpcr"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "barcode",
+        "datatype": "int"
+      },
+      {
+        "field": "mould_id",
+        "datatype": "int"
+      },
+      {
+        "field": "event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "user_id",
+        "datatype": "int"
+      },
+      {
+        "field": "cycle_update",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "recipe_id",
+        "datatype": "int"
+      },
+      {
+        "field": "manning_id",
+        "datatype": "int"
+      },
+      {
+        "field": "serial_no",
+        "datatype": "string"
+      },
+      {
+        "field": "is_cured",
+        "datatype": "boolean"
       },
       {
         "field": "year",
@@ -653,6 +1572,686 @@
       {
         "field": "winder",
         "datatype": "string"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.fct_paintingdata": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "fct_paintingdata"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "recipe_id",
+        "datatype": "int"
+      },
+      {
+        "field": "barcode",
+        "datatype": "string"
+      },
+      {
+        "field": "event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "weight",
+        "datatype": "double"
+      },
+      {
+        "field": "weight_status",
+        "datatype": "boolean"
+      },
+      {
+        "field": "painting_status",
+        "datatype": "int"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.fct_pcrvisualinspection": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "fct_pcrvisualinspection"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "barcode",
+        "datatype": "int"
+      },
+      {
+        "field": "manning_id",
+        "datatype": "int"
+      },
+      {
+        "field": "status",
+        "datatype": "int"
+      },
+      {
+        "field": "defect_area_id",
+        "datatype": "double"
+      },
+      {
+        "field": "defect_id",
+        "datatype": "int"
+      },
+      {
+        "field": "curing_wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "flag",
+        "datatype": "double"
+      },
+      {
+        "field": "flag_event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "mould_id",
+        "datatype": "int"
+      },
+      {
+        "field": "tbm_wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "tbm_recipe_id",
+        "datatype": "int"
+      },
+      {
+        "field": "vi_status",
+        "datatype": "double"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.fct_productiondatatuo": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "fct_productiondatatuo"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "luid",
+        "datatype": "int"
+      },
+      {
+        "field": "tire_type",
+        "datatype": "string"
+      },
+      {
+        "field": "machine_name",
+        "datatype": "string"
+      },
+      {
+        "field": "rfv",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_rfv",
+        "datatype": "double"
+      },
+      {
+        "field": "h2_rfv",
+        "datatype": "double"
+      },
+      {
+        "field": "hn_rfv",
+        "datatype": "double"
+      },
+      {
+        "field": "peak",
+        "datatype": "double"
+      },
+      {
+        "field": "lfv",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_lfv",
+        "datatype": "double"
+      },
+      {
+        "field": "ply",
+        "datatype": "double"
+      },
+      {
+        "field": "conicity",
+        "datatype": "double"
+      },
+      {
+        "field": "uniformity_grade",
+        "datatype": "string"
+      },
+      {
+        "field": "conicity_polarity",
+        "datatype": "int"
+      },
+      {
+        "field": "rro",
+        "datatype": "double"
+      },
+      {
+        "field": "upper_rro",
+        "datatype": "int"
+      },
+      {
+        "field": "lower_rro",
+        "datatype": "int"
+      },
+      {
+        "field": "h1_rro",
+        "datatype": "double"
+      },
+      {
+        "field": "upper_h1_rro",
+        "datatype": "int"
+      },
+      {
+        "field": "lower_h1_rro",
+        "datatype": "int"
+      },
+      {
+        "field": "upper_lro",
+        "datatype": "double"
+      },
+      {
+        "field": "lower_lro",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_upper_lro",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_lower_lro",
+        "datatype": "double"
+      },
+      {
+        "field": "upper_bulge",
+        "datatype": "double"
+      },
+      {
+        "field": "lower_bulge",
+        "datatype": "double"
+      },
+      {
+        "field": "upper_depression",
+        "datatype": "double"
+      },
+      {
+        "field": "lower_depression",
+        "datatype": "double"
+      },
+      {
+        "field": "wobble",
+        "datatype": "double"
+      },
+      {
+        "field": "barcode",
+        "datatype": "string"
+      },
+      {
+        "field": "test_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "rfv_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_rfv_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "h2_rfv_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "hn_rfv_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "peak_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "lfv_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_lfv_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "rfv_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_rfv_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "h2_rfv_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "hn_rfv_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "peak_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "lfv_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "h1_lfv_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "grade_rfv_cw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_rfv_cw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h2_rfv_cw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_hn_rfv_cw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lfv_cw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_lfv_cw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_rfv_ccw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_rfv_ccw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h2_rfv_ccw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_hn_rfv_ccw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lfv_ccw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_lfv_ccw",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_conicity",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_ply",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_upper_bulge",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lower_bulge",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_upper_depression",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lower_depression",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_rro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_upper_rro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lower_rro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_rro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_upper_h1_rro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lower_h1_rro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_upper_lro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_lower_lro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_upper_lro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_h1_lower_lro",
+        "datatype": "string"
+      },
+      {
+        "field": "grade_wobble",
+        "datatype": "string"
+      },
+      {
+        "field": "spring_rate",
+        "datatype": "double"
+      },
+      {
+        "field": "circumference",
+        "datatype": "double"
+      },
+      {
+        "field": "load_force",
+        "datatype": "double"
+      },
+      {
+        "field": "uniformity_inflation_press",
+        "datatype": "double"
+      },
+      {
+        "field": "uniformity_rim_width",
+        "datatype": "double"
+      },
+      {
+        "field": "uniformity_bead_diameter",
+        "datatype": "double"
+      },
+      {
+        "field": "lsft_cw",
+        "datatype": "double"
+      },
+      {
+        "field": "lsft_ccw",
+        "datatype": "double"
+      },
+      {
+        "field": "uniformity_units",
+        "datatype": "int"
+      },
+      {
+        "field": "cycle_time",
+        "datatype": "double"
+      },
+      {
+        "field": "mxn_cycle",
+        "datatype": "int"
+      },
+      {
+        "field": "recipe_id",
+        "datatype": "int"
+      },
+      {
+        "field": "mould_id",
+        "datatype": "int"
+      },
+      {
+        "field": "curing_wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "year",
+        "datatype": "int"
+      },
+      {
+        "field": "month",
+        "datatype": "int"
+      },
+      {
+        "field": "day",
+        "datatype": "int"
+      },
+      {
+        "field": "hour",
+        "datatype": "int"
+      },
+      {
+        "field": "source_machine",
+        "datatype": "string"
+      },
+      {
+        "field": "plant_code",
+        "datatype": "string"
+      },
+      {
+        "field": "_bronze_ingest_ts",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "_semantic_version",
+        "datatype": "string"
+      },
+      {
+        "field": "_structure_hash",
+        "datatype": "string"
+      }
+    ]
+  },
+  "silver.silver.fct_tbmpcr": {
+    "table": {
+      "database": "silver",
+      "schema": "silver",
+      "table": "fct_tbmpcr"
+    },
+    "fields": [
+      {
+        "field": "record_id",
+        "datatype": "int"
+      },
+      {
+        "field": "wc_id",
+        "datatype": "int"
+      },
+      {
+        "field": "barcode",
+        "datatype": "int"
+      },
+      {
+        "field": "recipe_id",
+        "datatype": "int"
+      },
+      {
+        "field": "recipe_code",
+        "datatype": "string"
+      },
+      {
+        "field": "gt_weight",
+        "datatype": "int"
+      },
+      {
+        "field": "manning_id",
+        "datatype": "int"
+      },
+      {
+        "field": "manning_id2",
+        "datatype": "int"
+      },
+      {
+        "field": "manning_id3",
+        "datatype": "int"
+      },
+      {
+        "field": "event_time",
+        "datatype": "timestamp"
+      },
+      {
+        "field": "defect_id",
+        "datatype": "double"
+      },
+      {
+        "field": "status_id",
+        "datatype": "int"
+      },
+      {
+        "field": "is_cured",
+        "datatype": "boolean"
       },
       {
         "field": "year",
